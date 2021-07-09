@@ -1,0 +1,117 @@
+.news__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2D3748;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.news-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.news {
+    display: grid;
+    grid-template-columns: 290px;
+    grid-template-rows: 180px 180px 50px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+    text-align: center;
+    transition: .2s ease;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.news:last-child {
+    margin-right: 3px;
+}
+.news-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.news-1 {
+    background: url(../images/news-1.png);
+}
+.news-2 {
+    background: url(../images/news-2.png);
+}
+.news-3 {
+    background: url(../images/news-3.png);
+}
+.news-text {
+    grid-area: text;
+    margin: 15px 15px;
+}
+.news-text .post__date {
+    color: #718096;
+    font-size: 13px;
+}
+.news-text a {
+    color: #2D3748;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.news-text a:hover {
+    color: #D97904;
+}
+
+.news-text p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #718096;
+}
+.news-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--gradient-color);
+}
+.news-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    color: #fff;
+}
+.news-stats .value {
+    font-size: 20px;
+    font-weight: 500;
+}
+.news-stats .value sup {
+    font-size: 12px;
+}
+.news-stats .type {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+.news-stats .border {
+    border-right: 1px solid #D97904;
+}
+.news-stats .border:last-child {
+    border-right: none;
+}
+
+.news:hover {
+    transform: scale(1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
