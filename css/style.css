@@ -57,7 +57,7 @@ a {
 input {
     width: 100%;
 }
-.form__search input {
+.form__search > input {
     height: 27px;
     font-size: 16px;
     line-height: 19px;
