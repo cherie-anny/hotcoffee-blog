@@ -20,7 +20,7 @@
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
     background: rgba(255, 255, 255, .75);
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
     text-align: center;
     transition: .2s ease;
     cursor: pointer;
@@ -113,5 +113,5 @@
 
 .news:hover {
     transform: scale(1);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
